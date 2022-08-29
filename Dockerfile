@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.1-alpine
+FROM public.ecr.aws/docker/library/nginx:1.19-alpine
 ENV ASPNETCORE_URLS=http://+:8080
 WORKDIR /app
 COPY /aspnetcoreapp/bin/Debug/netcoreapp2.1/* ./
